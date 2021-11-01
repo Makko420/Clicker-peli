@@ -6,24 +6,105 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 <body>
-    <div id="cookiesBox">
-        <h3 id="cookies">0</h3>
+    <div>
+        <div id="cookiesBox">
+            <h3 id="cookies">0</h3>
+        </div>
+        <div id="statsBox"> 
+            <h3 id="CperC">CPC: 1</h3>
+            <h3 id="CperS">CPS: 0</h3>
+        </div>
     </div>
 
-    <button onclick="getCookie(), game()">
-        <div>
-            <h4>Click me!</h4>
+    <!-- Antaa keksiä kun painaa sitä -->
+    <div>
+        <button id="cookie" onclick="getCookie(), game()">
+            <img src="img/cookie.png" alt="cookie">
             <p id="CPC">+1 Cookie(s)</p>
-        </div>
-    </button>
+        </button>
+    </div>
 
-    <button onclick="buyUpgrade1(), game()">
-        <div>
-            <h4>Buy Cookie crumbs</h4>
-            <p id="cost1">Cost: 10c</p>
-            <p>+1 Cookie per Click</p>
-        </div>
-    </button>
+    <!-- Kerran ostettavia päivityksiä -->
+    <div id="upgrades">
+        <button id="hide1" onclick="buyUpgrade7(), game()">
+            <div>
+                <img src="img/grandma.png" alt="granma">
+                <h4>Buy A Better Grandma</h4>
+                <p id="cost7">Cost: 5000c</p>
+                <p>2x Cookie per Click</p>
+            </div>
+        </button>
+        <button id="hide2" onclick="buyUpgrade8(), game()">
+            <div>
+                <img src="img/thiccOven.png" alt="thiccOven">
+                <h4>Buy Thicker Ovens</h4>
+                <p id="cost8">Cost: 10000c</p>
+                <p>2x Cookies per second</p>
+            </div>
+        </button>
+        <button id="hide3" onclick="buyUpgrade9(), game()">
+            <div>
+                <img src="img/factory.png" alt="factory">
+                <h4>Buy Oven Factory</h4>
+                <p id="cost9">Cost: 50000c</p>
+                <p>+1 Random oven per Second</p>
+            </div>
+        </button>
+    </div>
+
+     <!-- Päivittää keksin saantia per clikkaus -->
+    <div id="infUpgrades">
+        <button onclick="buyUpgrade1(), game()">
+            <div>
+                <img src="img/crumbs.png" alt="crumbs">
+                <h4>Buy Cookie crumbs</h4>
+                <p id="cost1">Cost: 10c</p>
+                <p>+1 Cookie per Click</p>
+            </div>
+        </button>
+        <button onclick="buyUpgrade6(), game()">
+            <div>
+                <img src="img/dough.png" alt="dough">
+                <h4>Buy Better Dough</h4>
+                <p id="cost6">Cost: 100c</p>
+                <p>+5 Cookie per Click</p>
+            </div>
+        </button>
+
+        <!-- Antaa Tietyn verran keksiä sekunnissa -->
+        <button onclick="buyUpgrade2(), game()">
+            <div>
+                <img src="img/basicOven.png" alt="basicOven">
+                <h4>Buy a Oven</h4>
+                <p id="cost2">Cost: 100c</p>
+                <p>+1 Cookie per Second</p>
+            </div>
+        </button>
+        <button onclick="buyUpgrade3(), game()">
+            <div>
+                <img src="img/goldenOven.png" alt="goldenOven">
+                <h4>Buy A Golden Oven</h4>
+                <p id="cost3">Cost: 750c</p>
+                <p>+5 Cookie per Second</p>
+            </div>
+        </button>
+        <button onclick="buyUpgrade4(), game()">
+            <div>
+                <img src="img/diamondOven.png" alt="diamondOven">
+                <h4>Buy A Diamond Oven</h4>
+                <p id="cost4">Cost: 5000c</p>
+                <p>+25 Cookie per Second</p>
+            </div>
+        </button>
+        <button onclick="buyUpgrade5(), game()">
+            <div>
+                <img src="img/uraniumOven.png" alt="uraniumOven">
+                <h4>Buy A Uranium Oven</h4>
+                <p id="cost5">Cost: 100000c</p>
+                <p>+99,999 Cookie per Second</p>
+            </div>
+        </button>
+    </div>
 </body>
 <script src="main.js"></script>
 </html>

@@ -1,0 +1,16 @@
+h3 {
+    border: 1px solid black;
+    min-width: 100px;
+    max-width: 207px;
+    margin: 1px;
+    padding-left: 3px;
+}
+
+#statsBox {
+    display: flex;
+}
+
+#cookie {
+    border: 0;
+    background: transparent;
+}
