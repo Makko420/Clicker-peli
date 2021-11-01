@@ -1,0 +1,11 @@
+- Nappula jota voi painaa ja antaa X pistettä
+- Tee boksi missä näkee montako pistettä on
+- Nappuloita jotka lisää X pisteen saantia
+- Lisää vähän CSS koodia ja grafiikoita
+
+
+26.9 su 5:15 - 5:40 
+
+- Nappula jota voi painaa ja saa X keksiä
+- Nappula jolla voi "päivittää" montako keksiä saa per yksi clickaus jos sinulla on tarpeeksi keksejä
+- Boksi mistä näkee montako keksiä on
