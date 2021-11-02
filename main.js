@@ -95,7 +95,6 @@ function buyUpgrade9() {
 
 // tämä päivittää numerot joka sekuntti ja aina kun jotain nappia painaa
 function game() {
-    document.getElementById("CPC").innerHTML = "+" + cpc*clickMulti + " Cookie(s)";
     document.getElementById("CperC").innerHTML = "CPC: " + cpc*clickMulti;
     document.getElementById("CperS").innerHTML = "CPS: " + cps*secMulti;
     document.getElementById("cost1").innerHTML = "Cost: " + upgradeCost1 + "c";

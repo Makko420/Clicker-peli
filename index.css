@@ -1,16 +1,46 @@
 h3 {
     border: 1px solid black;
-    min-width: 100px;
-    max-width: 207px;
+    min-width: 150px;
+    max-width: 307px;
     margin: 1px;
     padding-left: 3px;
+    background-color: whitesmoke;
+}
+
+body {
+    background-image: url("img/background.png");
+}
+
+#c {
+    margin-left: 200px;
+    margin-top: 80px;
 }
 
 #statsBox {
     display: flex;
 }
 
+button {
+    width: 200px;
+    margin: 4px;
+}
+
 #cookie {
+    width: 316px;
     border: 0;
     background: transparent;
+}
+
+#c {
+    flex-grow: 10;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#infUpgrades, #upgrades{
+    display: flex;
+    flex-direction: column;
 }
